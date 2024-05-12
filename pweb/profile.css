@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: linear-gradient(to right, #6495ED, #4169E1); 
+    padding: 20px 0; 
+    color: #fff;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+header nav ul {
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #FFD700; 
+}
+
+main {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    min-height: 100vh; 
+    background-color: #f9f9f9; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+
+.profile-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+#profile img {
+    max-width: 150px; 
+    border-radius: 50%; 
+    margin-bottom: 20px; 
+}
+
+.profile-info p {
+    margin-bottom: 8px;
+}
+
+section {
+    padding: 60px 0;
+    overflow: hidden;
+    margin-bottom: 50px; 
+}
+section#content {
+    flex: 1; 
+}
+section#kontak {
+    flex: 1; 
+}
+
+footer {
+    background-color: #4169E1; 
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #666;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+.sidebar {
+    background-color: white; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 60px;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px; 
+}
+
+#kontak {
+    text-align: center; /* Menengahkan teks */
+    max-width: 1000px; /* Lebar maksimum */
+    padding: 40px; /* Ruang di sekitar konten */
+    background-color: #fff; /* Warna latar belakang */
+    border-radius: 10px; /* Sudut melengkung */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Bayangan */
+    margin-left: 60px;
+    
+}
+
+#kontak h2 {
+    margin-bottom: 20px; 
+}
+
+#kontak p {
+    margin-bottom: 20px; 
+}
+
+#kontak ul {
+    list-style: none; 
+}
+
+#kontak ul li {
+    margin-bottom: 10px; 
+}
+
+#kontak ul li a {
+    text-decoration: none; 
+    color: #6495ED; 
+    transition: color 0.3s ease; 
+}
+
+#kontak ul li a:hover {
+    color: #555; 
+}
+
+/* Gaya untuk baris dan kolom */
+.row {
+    display: flex;
+    flex-direction: row; /* Atur tata letak menjadi baris */
+}
+
+.column {
+    flex: 1; /* Biarkan setiap kolom memiliki lebar yang sama */
+    padding: 10px; /* Beri jarak antara kolom */
+}
+
+/* Gaya untuk kolom pertama */
+.column:first-child {
+    text-align: left; /* Aligment teks ke kiri */
+    margin-left: 60px;
+}
+
+/* Gaya untuk kolom kedua */
+.column:last-child {
+    text-align: center; /* Aligment teks ke kanan */
+}
+
+#content {
+    margin-left: 60px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+#beranda {
+    max-width: 1000px; 
+    padding: 60px; 
+    background-color: #fff; 
+    border-radius: 10px; 
+    margin-left: 60px;
+    margin-bottom: 90px;
+}
+
+.profile-picture:hover {
+    transform: scale(2.05); /* Perbesar gambar saat hover */
+    transition: transform 0.3s ease; /* Efek transisi halus */
+}
+
+#scroll-to-top {
+    display: none; /* Tombol disembunyikan secara default */
+    position: fixed; /* Tombol tetap pada posisi */
+    bottom: 20px; /* Jarak dari bawah */
+    right: 20px; /* Jarak dari kanan */
+    background-color: blue; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Tanpa border */
+    border-radius: 5px; /* Sudut bulat */
+    padding: 10px 20px; /* Padding */
+    cursor: pointer; /* Tanda kursor tangan saat di atas tombol */
+    z-index: 999; /* Layer teratas */
+}

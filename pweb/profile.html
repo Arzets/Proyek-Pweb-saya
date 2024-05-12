@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Web</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <button id="scroll-to-top" onclick="scrollToTop()">Kembali ke Atas</button>
+
+    <header>
+        <nav>
+        
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#content">Tentang</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <aside class="sidebar">
+            <h2>About Me</h2>
+            <div id="profile">
+                <img src="pantai.jpg" alt="Profile Picture" class="profile-picture">
+                <div class="profile-info">
+                    <p><strong>Nama:</strong> Muhammad Aditya</p>
+                    <p><strong>Umur:</strong> 19tahun</p>
+                    <p><strong>Lokasi:</strong> Yogyakarta</p>
+                </div>
+            </div>
+        </aside>
+        
+        <section>
+            <article>
+                <div id="beranda">
+                    <article>
+                    <div class="row" style="justify-content: flex-start;">
+                        <div class="column" >
+                            <h2><b><em>Salam Kenal!</em></b></h2>
+                            <p>Selamat datang di profil web saya. Saya senang berkenalan dengan Anda.</p><br>
+                            <p>Saya senang Anda berada di sini. Di tempat ini, Anda akan menemukan sebuah jendela ke dalam dunia saya, dari pengalaman dan pencapaian hingga minat dan inspirasi. Saya berharap konten yang saya bagikan di sini dapat memberikan wawasan yang berharga dan inspirasi yang berkelanjutan. Silakan jelajahi setiap bagian, dari portofolio kreatif hingga artikel bermanfaat, dan temukan lebih banyak tentang siapa saya, apa yang saya lakukan, dan apa yang saya cintai. Saya berharap Anda menikmati perjalanan ini dan menemukan sesuatu yang menarik dan bermanfaat. Selamat mengeksplorasi!</p>
+                        </div>
+                        <div class="column" >
+                            <img src="pantai.jpg" style="max-width: 200px;" class="profile-picture">
+                        </div>
+                    </div>
+                </div></article>
+                
+                
+            <div id="content">
+                <article>
+                    <br><h2>Tentang Saya</h2><br>
+                    <p>Saya adalah seorang mahasiswa di Universitas Ahmad Dahlan Yogyakarta yang mengambil Program Studi Informatika. Minat saya di dunia IT mengarah pada Data Scientist.</p>
+                    <p>Mulai bergabung dengan Universitas Ahmad Dahlan sejak bulan September tahun 2023.</p>
+                    <br><br><img src="kampus.jpg" class="kampus" alt="Kampus"></article></div>
+              <br>
+                <div id="kontak">
+                    <article>
+                        <h2>Kontak</h2>
+                        <p>Anda dapat menghubungi saya melalui:</p>
+                        <ul>
+                            <li> <a href="https://www.instagram.com/md.adityaa__?igsh=MThzNzE5aWJtYWkxYg==">Instagram</a></li>
+                            <li>Email: 2300018305@webmail.uad.ac.id</li>
+                            <li>Telepon: +1234567890</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; Muhammad Aditya Kurniawan</p>
+    </footer>
+    
+    <script>
+        // Pilih gambar profil dengan menggunakan kelas 'profile-picture'
+        const profilePicture = document.querySelector('.profile-picture');
+
+        // Tambahkan event listener untuk saat kursor masuk ke gambar
+        profilePicture.addEventListener('mouseenter', () => {
+            // Perbesar gambar dengan menambahkan kelas 'hover-effect'
+            profilePicture.classList.add('hover-effect');
+        });
+
+        // Tambahkan event listener untuk saat kursor keluar dari gambar
+        profilePicture.addEventListener('mouseleave', () => {
+            // Hapus kelas 'hover-effect' untuk mengembalikan ke ukuran semula
+            profilePicture.classList.remove('hover-effect');
+        });
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0, // Kembali ke bagian atas halaman
+                behavior: 'smooth' // Efek animasi halus
+            });
+        }
+
+        // Tampilkan tombol ketika pengguna menggulir ke bawah
+        window.addEventListener('scroll', function() {
+            var scrollButton = document.getElementById('scroll-to-top');
+
+            // Jika posisi pengguliran lebih dari 300px dari atas
+            if (window.pageYOffset > 300) {
+                scrollButton.style.display = 'block'; // Tampilkan tombol
+            } else {
+                scrollButton.style.display = 'none'; // Sembunyikan tombol
+            }
+        });
+    </script>
+</body>
+</html>
